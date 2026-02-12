@@ -1,0 +1,50 @@
+:root {
+    /* Colors */
+    --c-bg:          #06070B;
+    --c-surface:     rgba(255, 255, 255, 0.01);
+    --c-border:      rgba(240, 250, 250, 0.12);
+    --c-border-gold: rgba(200, 155, 60, 0.25);
+    --c-white:       #ffffff;
+    --c-text:        #f0e6d2;
+    --c-text-muted:  #a09b8c;
+    --c-text-dim:    #5b5a56;
+    --c-gold:        #c89b3c;
+    --c-gold-dark:   #785a28;
+    --c-gold-mid:    #a07628;
+    --c-red:         #ef4444;
+    --c-green:       #4ade80;
+    --c-green-bg:    #1a5c2a;
+    --c-reddit:      #ff4500;
+    --c-reddit-hover:#e03d00;
+    --c-danger-bg:   rgba(239, 68, 68, 0.1);
+    --c-danger-brd:  rgba(239, 68, 68, 0.2);
+    --c-black-alpha: rgba(0, 0, 0, 0.4);
+    --c-dark-purple: #1a1028;
+
+    /* Typography */
+    --font-family:   Figtree, system-ui, -apple-system, sans-serif;
+    --fs-xs:         0.6875rem;
+    --fs-sm:         0.75rem;
+    --fs-base:       0.875rem;
+    --fs-md:         0.9375rem;
+    --fs-lg:         1.125rem;
+    --fs-xl:         1.5rem;
+
+    /* Spacing & Sizing */
+    --space-xs:      0.5rem;
+    --space-sm:      0.875rem;
+    --space-md:      1rem;
+    --space-lg:      1.125rem;
+    --space-xl:      1.5rem;
+    --space-xxl:     2rem;
+
+    --radius-sm:     8px;
+    --radius-md:     12px;
+    --radius-lg:     16px;
+    --radius-xl:     20px;
+
+    /* Effects */
+    --blur:          blur(20px);
+    --shadow:        0 10px 40px rgba(0, 0, 0, 0.3);
+    --shadow-lg:     0 20px 60px rgba(0, 0, 0, 0.5);
+}
