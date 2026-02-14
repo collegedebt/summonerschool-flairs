@@ -11,7 +11,7 @@
 
 <header>
     <div class="user-info">
-        <img class="avatar" src="{appState.user?.redditAvatar}" alt="Reddit Profile Picture" />
+        <img class="avatar" src={appState.user?.redditAvatar} alt="Reddit Profile Picture" />
         <div>
             <div class="username">u/{appState.user?.redditUsername}</div>
             <div class="karma">{appState.user?.karma.toLocaleString()} karma</div>
@@ -26,7 +26,8 @@
 
 <style>
     header {
-        max-width: 600px; margin: 0 auto 12px;
+        max-width: 600px;
+        margin: 0 auto 12px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -59,10 +60,13 @@
         font-weight: 600;
     }
 
-    .karma { color: var(--c-text-muted); font-size: 12px; }
+    .karma {
+ color: var(--c-text-muted);
+ font-size: 12px;
+ }
 
     .logout-btn {
-        background: rgba(255,255,255,0.06);
+        background: rgb(255 255 255 / 6%);
         border: 1px solid var(--c-border);
         border-radius: 8px;
         margin-left: 24px;
@@ -75,7 +79,8 @@
         gap: 8px;
         transition: background 0.2s;
     }
+
     .logout-btn:hover {
-        background: rgba(255,255,255,0.1);
+        background: rgb(255 255 255 / 10%);
     }
 </style>

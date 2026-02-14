@@ -1,5 +1,5 @@
-@import "./fonts.css";
-@import "./variables.css";
+@import url("./fonts.css");
+@import url("./variables.css");
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -9,7 +9,7 @@ body {
     margin: 0;
     background-color: var(--c-bg);
     font-family: var(--font-family);
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizelegibility;
     min-height: 100vh;
 }
 
@@ -21,21 +21,25 @@ body::before {
     width: 100%;
     height: 100%;
     background: radial-gradient(#C8AA6E, #101f3e, #59C1DE) center;
+
     --mask: radial-gradient(circle at 1px 1px, black 1px, transparent 0);
-    -webkit-mask-image: var(--mask);
     mask-image: var(--mask);
     mask-repeat: repeat;
     mask-position: center;
-    -webkit-mask-position: center;
     mask-size: 75px 75px;
-    -webkit-mask-size: 75px 75px;
     z-index: -1;
     animation: breathe 7.5s ease-in-out infinite;
 }
 
 @keyframes breathe {
-    0%, 100% { background-size: 100% 100%; }
-    50% { background-size: 150% 150%; }
+
+    0%, 100% {
+ background-size: 100% 100%;
+ }
+
+    50% {
+ background-size: 150% 150%;
+ }
 }
 
 button, input, select, textarea {
@@ -44,6 +48,7 @@ button, input, select, textarea {
 }
 
 /* Text formatting */
+
 h1 {
     font-size: var(--fs-xl);
     margin: 0 0 var(--space-xs);
@@ -74,6 +79,7 @@ h2 {
 }
 
 /* Reusable card */
+
 .card {
     background: var(--c-surface);
     border: 1px solid var(--c-border);
@@ -112,6 +118,7 @@ h2 {
 }
 
 /* Buttons */
+
 .btn {
     padding: 12px 18px;
     border: none;
@@ -138,7 +145,9 @@ h2 {
     font-weight: 700;
 }
 
-.btn-gold:hover { filter: brightness(1.1); }
+.btn-gold:hover {
+    filter: brightness(1.1);
+}
 
 .btn-ghost {
     background: var(--c-surface);
@@ -146,7 +155,9 @@ h2 {
     color: var(--c-text-muted);
 }
 
-.btn-ghost:hover { background: rgba(255, 255, 255, 0.1); }
+.btn-ghost:hover {
+    background: rgb(255 255 255 / 10%);
+}
 
 .btn-danger {
     background: var(--c-danger-bg);
@@ -154,7 +165,9 @@ h2 {
     color: var(--c-red);
 }
 
-.btn-danger:hover { background: var(--c-danger-brd); }
+.btn-danger:hover {
+ background: var(--c-danger-brd);
+ }
 
 .btn-reddit {
     background: var(--c-reddit);
@@ -173,9 +186,12 @@ h2 {
     background: var(--c-reddit-hover);
 }
 
-.btn-full { width: 100%; }
+.btn-full {
+ width: 100%;
+ }
 
 /* Form fields */
+
 .field {
     display: block;
     margin-bottom: var(--space-md);
@@ -208,7 +224,9 @@ select {
 }
 
 input:focus,
-select:focus { border-color: var(--c-gold); }
+select:focus {
+ border-color: var(--c-gold);
+ }
 
 select option {
     padding: 12px;
@@ -217,22 +235,48 @@ select option {
 }
 
 /* Text helpers */
-.text-muted { color: var(--c-text-muted); }
-.text-dim   { color: var(--c-text-dim); }
-.text-gold  { color: var(--c-gold); font-weight: 600; }
-.text-green { color: var(--c-green); }
+
+.text-muted {
+ color: var(--c-text-muted);
+ }
+
+.text-dim   {
+ color: var(--c-text-dim);
+ }
+
+.text-gold  {
+ color: var(--c-gold);
+ font-weight: 600;
+ }
+
+.text-green {
+ color: var(--c-green);
+ }
 
 /* Error */
+
 .error-msg {
     color: var(--c-red);
     font-size: var(--fs-base);
     margin-bottom: var(--space-sm);
     padding: var(--space-xs) 12px;
     background: var(--c-danger-bg);
+    border: 1px solid var(--c-danger-brd);
     border-radius: var(--radius-sm);
 }
 
 /* Layout helpers */
-.row   { display: flex; gap: 10px; margin-bottom: var(--space-md); }
-.flex-1 { flex: 1; }
-.flex-2 { flex: 2; }
+
+.row   {
+    display: flex;
+    gap: 10px;
+    margin-bottom: var(--space-md);
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}

@@ -49,9 +49,9 @@ export async function linkRiotAccount(gameName: string, tagLine: string, region:
      * Returns an instance of a linked Riot account
      * POST /api/link-riot
      */
-    if (!gameName.trim()) throw new Error("Game Name is required");
-    if (!tagLine.trim()) throw new Error("TagLine is required");
-    if (!region.trim()) throw new Error("Region is required");
+    if (!gameName.trim()) {throw new Error("Game Name is required");}
+    if (!tagLine.trim()) {throw new Error("TagLine is required");}
+    if (!region.trim()) {throw new Error("Region is required");}
 
     await delay(3000);
     return {

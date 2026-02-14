@@ -25,8 +25,8 @@
             const data = await getMe();
             appState.user = data.user;
             appState.riotAccount = data.riotAccount;
-        } catch (e) {
-            // no session
+        } catch {
+            // Do nothing if session values are null
         } finally {
             loading = false;
         }

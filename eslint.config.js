@@ -17,9 +17,32 @@ export default defineConfig(
 	{
 		languageOptions: { globals: { ...globals.browser, ...globals.node } },
 		rules: {
-			// typescript-eslint strongly recommend that you do not use the no-undef lint rule on TypeScript projects.
-			// see: https://typescript-eslint.io/troubleshooting/faqs/eslint/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
-			"no-undef": 'off'
+			"no-undef": 'off',
+
+			// 1. Naming consistency
+			"no-var": "error",
+			"prefer-const": "off",
+			"camelcase": ["warn", { "properties": "never" }],
+
+			// 2. Logical Guardrails
+			"eqeqeq": ["error", "always"],
+			"curly": ["error", "all"],
+			"no-unneeded-ternary": "error",
+			"no-confusing-arrow": "error",
+
+			// 3. Syntax enforcement
+			"prefer-template": "error",
+			"object-shorthand": "error",
+			"arrow-body-style": ["error", "as-needed"],
+			// TODO: once project solidifies need to turn this to error.
+			"@typescript-eslint/no-unused-vars": ["warn", {
+				"argsIgnorePattern": "^_",
+				"varsIgnorePattern": "^_"
+			}],
+
+			// 4. Svelte specific
+			"svelte/html-quotes": ["error", { "prefer": "double" }],
+			"svelte/no-at-html-tags": "error",
 		}
 	},
 	{

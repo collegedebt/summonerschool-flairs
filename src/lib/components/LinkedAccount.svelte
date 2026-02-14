@@ -65,7 +65,7 @@
     }
 
     .stats-grid {
-        background: rgba(0,0,0,0.3);
+        background: rgb(0 0 0 / 30%);
         border-radius: var(--radius-md);
         padding: 20px;
         display: grid;
