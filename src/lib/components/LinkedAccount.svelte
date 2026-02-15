@@ -58,7 +58,7 @@
     }
 
     h2 {
-        font-size: 18px;
+        font-size: var(--fs-lg);
         margin: 0;
         font-weight: 600;
         color: var(--c-green);
@@ -67,43 +67,43 @@
     .stats-grid {
         background: rgb(0 0 0 / 30%);
         border-radius: var(--radius-md);
-        padding: 20px;
+        padding: var(--radius-xl);
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 16px;
+        gap: var(--space-md);
     }
 
     .label {
         display: block;
-        color: #5b5a56;
-        font-size: 11px;
+        color: var(--c-text-dim);
+        font-size: var(--fs-xs);
         text-transform: uppercase;
         letter-spacing: 0.08em;
-        margin-bottom: 4px;
+        margin-bottom: var(--space-3xs);
     }
 
     .value {
-        color: #f0e6d2;
-        font-size: 15px;
+        color: var(--c-text);
+        font-size: var(--fs-md);
     }
 
     .value.gold {
-        color: #c89b3c;
+        color: var(--c-gold);
         font-weight: 600;
     }
 
     .unlink-btn {
-        margin-top: 20px;
+        margin-top: var(--radius-xl);
         background: var(--c-danger-bg);
         border: 1px solid var(--c-danger-brd);
-        border-radius: 10px;
-        padding: 10px 18px;
+        border-radius: var(--radius-2xs);
+        padding: var(--space-2xs) var(--space-lg);
         color: var(--c-red);
-        font-size: 13px;
+        font-size: var(--fs-sm);
         cursor: pointer;
         display: flex;
         align-items: center;
-        gap: 6px;
+        gap: var(--space-3xs);
         transition: background 0.2s;
     }
 

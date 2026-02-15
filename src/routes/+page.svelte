@@ -56,8 +56,8 @@
 <style>
     .page {
         min-height: 100vh;
-        padding: 20px;
-        color: #f0e6d2;
+        padding: var(--radius-xl);
+        color: var(--c-text);
     }
 
     .page.center {

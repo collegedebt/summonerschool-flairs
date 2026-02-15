@@ -1,5 +1,5 @@
 import { API_BASE, regionName } from "$lib/constants";
-import type {SessionResponse, RiotAccount, Redditor} from "$lib/types";
+import type { SessionResponse, RiotAccount } from "$lib/types";
 
 function delay(ms: number): Promise<void> {
     return new Promise(resolve => setTimeout(resolve, ms));
@@ -10,7 +10,7 @@ async function apiFetch<T>(path: string, options: RequestInit = {}): Promise<T> 
         credentials: 'include',
         headers: {
             "Content-Type": "application/json",
-            ...options.headers},
+            ...options.headers },
             ...options,
     });
 

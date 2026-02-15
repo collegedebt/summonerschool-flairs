@@ -11,7 +11,7 @@
 
 <header>
     <div class="user-info">
-        <img class="avatar" src={appState.user?.redditAvatar} alt="Reddit Profile Picture" />
+        <img class="avatar" src={appState.user?.redditAvatar} alt="Reddit Profile" />
         <div>
             <div class="username">u/{appState.user?.redditUsername}</div>
             <div class="karma">{appState.user?.karma.toLocaleString()} karma</div>
@@ -27,31 +27,31 @@
 <style>
     header {
         max-width: 600px;
-        margin: 0 auto 12px;
+        margin: 0 auto var(--radius-md);
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 16px 0;
+        padding: var(--space-md) 0;
         z-index: 1;
     }
 
     .user-info {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: var(--radius-md);
     }
 
     .avatar {
         width: 36px;
         height: 36px;
-        border-radius: 10px;
-        background: var(-c-reddit);
+        border-radius: var(--radius-2xs);
+        background: var(--c-reddit);
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(-c-white);
+        color: var(--c-white);
         font-weight: 700;
-        font-size: 14px;
+        font-size: var(--fs-base);
     }
 
     .username {
@@ -61,22 +61,22 @@
     }
 
     .karma {
- color: var(--c-text-muted);
- font-size: 12px;
- }
+        color: var(--c-text-muted);
+        font-size: var(--fs-2xs);
+    }
 
     .logout-btn {
         background: rgb(255 255 255 / 6%);
         border: 1px solid var(--c-border);
-        border-radius: 8px;
-        margin-left: 24px;
-        padding: 8px 12px;
-        color: #a09b8c;
-        font-size: 13px;
+        border-radius: var(--radius-sm);
+        margin-left: var(--space-xl);
+        padding: var(--space-xs) var(--radius-md);
+        color: var(--c-text-muted);
+        font-size: var(--fs-sm);
         cursor: pointer;
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: var(--space-xs);
         transition: background 0.2s;
     }
 

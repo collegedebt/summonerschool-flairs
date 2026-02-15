@@ -43,12 +43,12 @@
     .fp-icon-box {
         width: 64px;
         height: 64px;
-        border-radius: 16px;
+        border-radius: var(--radius-lg);
         background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0 auto 24px;
-        color: #fff;
+        margin: 0 auto var(--space-xl);
+        color: var(--c-white);
     }
 </style>

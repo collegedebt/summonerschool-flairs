@@ -39,6 +39,7 @@ export default defineConfig(
 				"argsIgnorePattern": "^_",
 				"varsIgnorePattern": "^_"
 			}],
+			"object-curly-spacing": ["error", "always"],
 
 			// 4. Svelte specific
 			"svelte/html-quotes": ["error", { "prefer": "double" }],
